@@ -1,0 +1,68 @@
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:categories/:year/:month/:day/:title
+exclude: [".rvmrc",".rbenv-version","Rakefile","Gemfile","Gemfile.lock","changelog.md","README.md",'sass','watch.sh'] # files to exclude
+auto: true
+pygments: true
+production: false
+env : developement
+
+# Configuration
+title: Activités Saint-Nicaise
+tagline: Groupe de loisirs créatifs
+author:
+  name: Actvité Saint-Nicaise
+  email: activitessaintnicaise@gmail.com
+  github: activitessaintnicaise
+  twitter: activitesaintnicaise
+  feedburner: activitessaintnicaise
+production_url: http://activitesaintnicaise.org
+
+# Google analyitcs API
+gadash :
+  api_key : AIzaSyDbLyMADJ40iXp4JpRSRrsgAWFozSLoMvA
+  client_id : 
+    developement : 873987230620-73jsn9tivn0kepstu8jtl1cdjpt5avv3.apps.googleusercontent.com
+    production : 873987230620-22r92a7bf0jelikj0p09ptkc1pi3qst2.apps.googleusercontent.com
+  table_id : ga:67617751
+
+
+# Assets Pipeline
+javascript_compressor: closure
+
+stylesheets:
+  screen:
+    - themes/twitter/bootstrap/css/bootstrap.min.css
+    - themes/twitter/bootstrap/css/bootstrap-responsive.css
+    - themes/twitter/css/style.css
+
+# Jekyll bootstrap configuration
+JB:
+  version: 0.2.13
+  BASE_PATH: false
+  ASSET_PATH: false
+  archive_path: /archive.html
+  comments:
+    provider: false
+    disqus:
+      short_name: 
+    livefyre:
+      site_id: 123
+    intensedebate:
+      account: 123abc
+    facebook:
+      appid: 123
+      num_posts: 5
+      width: 580
+      colorscheme: light
+  analytics:
+    provider: google
+    google:
+      tracking_id: UA-37417229-1
+    getclicky:
+      site_id: 
+    mixpanel:
+      token: _MIXPANEL_TOKEN_
+  pingdom : 51764493e6e53dd01f000000
+  sharing:
+    provider: false
