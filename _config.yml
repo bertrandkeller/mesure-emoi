@@ -8,23 +8,23 @@ production: false
 env : developement
 
 # Configuration
-title: Activités Saint-Nicaise
-tagline: Groupe de loisirs créatifs
+title: Mesure Émoi
+tagline: Présentation sur la conception de site
 author:
-  name: Actvité Saint-Nicaise
-  email: activitessaintnicaise@gmail.com
-  github: activitessaintnicaise
-  twitter: activitesaintnicaise
-  feedburner: activitessaintnicaise
-production_url: http://activitesaintnicaise.org
+  name: Mesure Émoi
+  email: bertrand.keller@gmail.com
+  github: bertrandkeller
+  twitter: bertrandkeller
+  feedburner: bertrandkeller
+production_url: 
 
 # Google analyitcs API
 gadash :
-  api_key : AIzaSyDbLyMADJ40iXp4JpRSRrsgAWFozSLoMvA
+  api_key : 
   client_id : 
-    developement : 873987230620-73jsn9tivn0kepstu8jtl1cdjpt5avv3.apps.googleusercontent.com
-    production : 873987230620-22r92a7bf0jelikj0p09ptkc1pi3qst2.apps.googleusercontent.com
-  table_id : ga:67617751
+    developement : 
+    production : 
+  table_id : 
 
 
 # Assets Pipeline

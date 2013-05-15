@@ -1,13 +1,9 @@
 
-http://activitesaintnicaise.org/adresse.html
-http://activitesaintnicaise.org/archive.html
-http://activitesaintnicaise.org/atom.xml
-http://activitesaintnicaise.org/board.html
-http://activitesaintnicaise.org/.htaccess
-http://activitesaintnicaise.org/index.html
-http://activitesaintnicaise.org/refection-fauteuil.html
-http://activitesaintnicaise.org/sitemap.txt
+/atom.xml
+/.htaccess
+/index.html
+/sitemap.txt
 
-http://activitesaintnicaise.org/2013/03/29/stage-fauteuil-en-avril
-http://activitesaintnicaise.org/2013/03/20/cannage-nouvelle-activite
-http://activitesaintnicaise.org/2013/01/04/repas-de-la-galette
+/2013/03/29/stage-fauteuil-en-avril
+/2013/03/20/cannage-nouvelle-activite
+/2013/01/04/repas-de-la-galette

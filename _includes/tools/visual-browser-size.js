@@ -1,4 +1,3 @@
-{% if site.env == 'developement' %}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
 // Visual Browser Size @ http://xycss.com/xy/tools/visual-browser-size/
@@ -22,4 +21,3 @@ $(window).resize(function() {
 	xycss_dynamic_browser_size();
 });
 </script>
-{% endif %}

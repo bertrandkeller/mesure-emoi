@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css">
+		<link rel="stylesheet" href="{{ ASSET_PATH }}/css/holmes.css">
 
 		<!-- { include_css screen } -->
 		
@@ -27,46 +28,70 @@
 	    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	  -->
 		{% include tools/pingdom.js %}
-		{% include tools/html_codesniffer.js %}
-		{% include tools/visual-browser-size.js %}
+		{% if site.env == 'developement' %}
+			{% include tools/visual-browser-size.js %}
+			<script type="text/javascript" charset="utf-8">
+				$(function () {	
+					$('.holmes').on('click',function(e){
+						$('body').toggleClass('holmes-debug');
+						e.preventdefault();
+					});
+					var TocContent = '<div id="toc"></div>'
+					$('.presentation').on('click',function(e){
+						$('body').toggleClass('presentation');
+						if (TocContent != '') {
+		            $(TocContent).prependTo("body");
+								TocContent = '';
+		        } else {
+		            $("body").children().first().toggle();
+		        }
+						$('#toc').toc({'selectors': 'h1','container': '#content','smoothScrolling': true,});
+						e.preventdefault();
+					});
+				});
+			</script>
+		{% endif %}
   </head>
-
+	
   <body>
-
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
-      </div>
-    </div>
+		
+		<div class="debug-button">
+			<a class="btn btn-primary presentation" href="#">Presentation</a>
+			<a class="btn btn-primary holmes" href="#">Debug CSS</a>
+			<a class="btn btn-primary" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();"><span class="screen-hide">CodeSniffer</span></a>
+			<a class="btn btn-primary" href="javascript:(function(d,s,id){var b=document.getElementsByTagName(&quot;script&quot;)[0],a=document.createElement(s);a.type=&quot;text/javascript&quot;;a.id=id;a.async=true;a.charset=&quot;UTF-8&quot;;a.src=&quot;//my.pingdom.com/widgets/rum-mini/widget.js&quot;;b.parentNode.insertBefore(a,b);})(document,&quot;script&quot;,&quot;pingdom-widget-js-rummini&quot;);">Pingdom</a>
+		</div>
 
     <div class="container">
-
-      <div class="content">
-        {{ content }}
-      </div>
-
+			<div class="container_int">	
+      	<div class="content">
+	        {{ content }}
+	      </div>
+			</div>
       <footer>
 				<p itemscope itemtype="http://schema.org/Organization">
-				  <span itemprop="name">{{ site.author.name }}</span>,
-				  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				      <span itemprop="streetAddress">18, rue Poussin</span>
-				      <span itemprop="postalCode">F-76000</span>
-				      <span itemprop="addressLocality">Rouen, France</span>
-				  </span> - 
-				  <strong>Tel :</strong> <span itemprop="telephone">06 83 03 54 25</span> - 
-			    <strong>E-mail :</strong> <span itemprop="email">contact@activitesaintnicaise.org</span>
+				  <span itemprop="name">{{ site.author.name }}</span>, 
+				  <strong>Web site :</strong> <span itemprop="website"><a href="http://bertrand.keller.info">bertrand.keller.info</a></span> - 
+			    <strong>E-mail :</strong> <span itemprop="email">bertrand.keller@gmail.com</span>
 				</p>
       </footer>
 
     </div> <!-- /container -->
-
+		<script src="assets/script/jquery.toc.js"></script>
+		<script src="assets/script/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			document.body.className += ' js';
+			$(document).ready(function() {
+			$('.popup-iframe').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+          fixedContentPos: false
+        });
+      });
+		</script>
     {% include JB/analytics %}
   </body>
 </html>

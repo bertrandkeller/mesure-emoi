@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Activités Saint-Nicaise</title>
- <link href="http://activitesaintnicaise.org/atom.xml" rel="self"/>
- <link href="http://activitesaintnicaise.org"/>
- <updated>2013-05-06T10:29:51+02:00</updated>
- <id>http://activitesaintnicaise.org</id>
+ <title>Mesure Émoi</title>
+ <link href="/atom.xml" rel="self"/>
+ <link href=""/>
+ <updated>2013-05-15T14:49:53+02:00</updated>
+ <id></id>
  <author>
-   <name>Actvité Saint-Nicaise</name>
-   <email>activitessaintnicaise@gmail.com</email>
+   <name>Mesure Émoi</name>
+   <email>bertrand.keller@gmail.com</email>
  </author>
 
  
  <entry>
    <title>Stage fauteuil en avril</title>
-   <link href="http://activitesaintnicaise.org/2013/03/29/stage-fauteuil-en-avril"/>
+   <link href="/2013/03/29/stage-fauteuil-en-avril"/>
    <updated>2013-03-29T00:00:00+01:00</updated>
-   <id>http://activitesaintnicaise.org/2013/03/29/stage-fauteuil-en-avril</id>
+   <id>/2013/03/29/stage-fauteuil-en-avril</id>
    <content type="html">&lt;p&gt;Un stage de réfection de fauteuils ancien sera proposé fin avril pendant les vacances scolaire. Vous pourrez continuer la réfection de votre fauteuil en cours ou en profiter pour vous lancer dans la remise en forme d&amp;#8217;une nouvelle œuvre que ce soit une bergère, marquise, cabriolet ou autre fauteuil club.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Dates disponibles :&lt;/strong&gt; le 23, 24 et 25 avril 2013&lt;/p&gt;
@@ -26,9 +26,9 @@
  
  <entry>
    <title>Le cannage, nouvelle activité</title>
-   <link href="http://activitesaintnicaise.org/2013/03/20/cannage-nouvelle-activite"/>
+   <link href="/2013/03/20/cannage-nouvelle-activite"/>
    <updated>2013-03-20T00:00:00+01:00</updated>
-   <id>http://activitesaintnicaise.org/2013/03/20/cannage-nouvelle-activite</id>
+   <id>/2013/03/20/cannage-nouvelle-activite</id>
    <content type="html">&lt;p&gt;Une nouvelle activité est proposé par l&amp;#8217;association Saint-Nicaise. Elle s&amp;#8217;ajoutera à la rénovation de fauteuils anciens, le patchwork, la tapisserie à l’aiguille, la cannage et le nettoyage de tableaux.&lt;/p&gt;
 
 &lt;p&gt;Une session d&amp;#8217;initiation au cannage est organisée depuis le 16 novembre 2012 à la maison Saint Nicaise.&lt;/p&gt;
@@ -40,9 +40,9 @@
  
  <entry>
    <title>Repas de la galette</title>
-   <link href="http://activitesaintnicaise.org/2013/01/04/repas-de-la-galette"/>
+   <link href="/2013/01/04/repas-de-la-galette"/>
    <updated>2013-01-04T00:00:00+01:00</updated>
-   <id>http://activitesaintnicaise.org/2013/01/04/repas-de-la-galette</id>
+   <id>/2013/01/04/repas-de-la-galette</id>
    <content type="html">Les différents groupes participants aux activités de l'association sont invités à un repas pour fêter la nouvelle année en mangeant la galette.&lt;br&gt;&lt;br&gt;Nous nous retrouverons à la maison Saint-Nicaise, pour parler de nos réalisations que ce soit dans la rénovation de fauteuils anciens, le patchwork, la tapisserie à l'aiguille, la cannage ou le nettoyage de tableaux.&lt;br&gt;&lt;br&gt;&lt;br&gt;</content>
  </entry>
  
