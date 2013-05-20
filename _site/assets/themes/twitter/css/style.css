@@ -5,6 +5,10 @@ html, body {
 .navbar {
   margin-bottom: 0;
 }
+p,li {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
 .presentation .container {
 	margin-top: 5em;
 	width: 1200px;
@@ -30,6 +34,9 @@ h1 {
 	margin-bottom: .3em;
 }
 
+h2 {
+	margin-bottom: .3em;
+}
 .subtitle {
 	margin-top: -10px;
 	margin-bottom: .3em;
