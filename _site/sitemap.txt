@@ -3,7 +3,3 @@
 /.htaccess
 /index.html
 /sitemap.txt
-
-/2013/03/29/stage-fauteuil-en-avril
-/2013/03/20/cannage-nouvelle-activite
-/2013/01/04/repas-de-la-galette

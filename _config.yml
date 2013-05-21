@@ -5,7 +5,7 @@ exclude: [".rvmrc",".rbenv-version","Rakefile","Gemfile","Gemfile.lock","changel
 auto: true
 pygments: true
 production: false
-env : developement
+env : production
 
 # Configuration
 title: Mesure Émoi
