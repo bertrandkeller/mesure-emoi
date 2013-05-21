@@ -1,5 +1,5 @@
 
-/atom.xml
-/.htaccess
-/index.html
-/sitemap.txt
+http://bertrandkeller.github.io/mesure-emoi//atom.xml
+http://bertrandkeller.github.io/mesure-emoi//.htaccess
+http://bertrandkeller.github.io/mesure-emoi//index.html
+http://bertrandkeller.github.io/mesure-emoi//sitemap.txt

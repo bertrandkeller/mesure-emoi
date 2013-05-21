@@ -16,25 +16,25 @@ author:
   github: bertrandkeller
   twitter: bertrandkeller
   feedburner: bertrandkeller
-production_url: 
+production_url: http://bertrandkeller.github.io/mesure-emoi/
 
 # Google analyitcs API
-gadash :
-  api_key : 
-  client_id : 
-    developement : 
-    production : 
-  table_id : 
+# gadash :
+#   api_key : 
+#   client_id : 
+#     developement : 
+#     production : 
+#   table_id : 
 
 
 # Assets Pipeline
-javascript_compressor: closure
-
-stylesheets:
-  screen:
-    - themes/twitter/bootstrap/css/bootstrap.min.css
-    - themes/twitter/bootstrap/css/bootstrap-responsive.css
-    - themes/twitter/css/style.css
+# javascript_compressor: closure
+# 
+# stylesheets:
+#   screen:
+#     - themes/twitter/bootstrap/css/bootstrap.min.css
+#     - themes/twitter/bootstrap/css/bootstrap-responsive.css
+#     - themes/twitter/css/style.css
 
 # Jekyll bootstrap configuration
 JB:
@@ -56,9 +56,9 @@ JB:
       width: 580
       colorscheme: light
   analytics:
-    provider: google
+    provider: false
     google:
-      tracking_id: UA-37417229-1
+      tracking_id:
     getclicky:
       site_id: 
     mixpanel:
