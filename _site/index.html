@@ -29,18 +29,50 @@
 	    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 	  -->
 		
-	<script>
-		var _prum = [['id', '51764493e6e53dd01f000000'],
-		             ['mark', 'firstbyte', (new Date()).getTime()]];
-		(function() {
-		    var s = document.getElementsByTagName('script')[0]
-		      , p = document.createElement('script');
-		    p.async = 'async';
-		    p.src = '//rum-static.pingdom.net/prum.min.js';
-		    s.parentNode.insertBefore(p, s);
-		})();
-	</script>
-
+		
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+// Visual Browser Size @ http://xycss.com/xy/tools/visual-browser-size/
+function xycss_dynamic_browser_size(){
+	$('#browser-size').text('w : ' + $(window).width() + ' , h : ' + $(window).height()).css({
+		width:'120px', bottom:'0', left:'0', background:'#000', cursor:'pointer', padding:'0.75em', 
+		zIndex:9999, position:'fixed', textDecoration:'none', color:'#fff', opacity:0.7
+	}).hover(function(){
+		$(this).css({ opacity:0.9 });
+	},function(){
+		$(this).css({ opacity:0.7 });
+	});
+}
+$(document).ready(function(){
+	if($(window).width() > 480) {
+		$('body').append('<div class="button" id="browser-size"></div>');
+	}
+	xycss_dynamic_browser_size();
+});
+$(window).resize(function() {
+	xycss_dynamic_browser_size();
+});
+</script>
+			<script type="text/javascript" charset="utf-8">
+				$(function () {	
+					$('.holmes').on('click',function(e){
+						$('body').toggleClass('holmes-debug');
+						e.preventdefault();
+					});
+					var TocContent = '<div id="toc"></div>'
+					$('.presentation').on('click',function(e){
+						$('body').toggleClass('presentation');
+						if (TocContent != '') {
+		            $(TocContent).prependTo("body");
+								TocContent = '';
+		        } else {
+		            $("body").children().first().toggle();
+		        }
+						$('#toc').toc({'selectors': 'h1','container': '#content','smoothScrolling': true,});
+						e.preventdefault();
+					});
+				});
+			</script>
 		
   </head>
 	
